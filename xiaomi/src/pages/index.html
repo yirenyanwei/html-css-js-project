@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="" type="text/css">
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部，导入片段 路径从basepath以后开始书写-->
+    <!-- 导入的时候传递第二个参数 json类型的对象 -->
+    @-@include('./header.html', {title: '首页'})
+
+    <h1 class="">首页</h1>
+    <input type="text" checked="checked">
+    <div>hahaha</div>
+
+    <video src="../videos/5b4ec6e9b2913.mp4" width="320" height="200" controls preload></video>
+
+    <br>
+    <audio src="../audios/471729.mp3" controls preload></audio>
+
+    <!-- 引入footer.html -->
+    @-@include('./footer.html', {title:"尾部"})
+    
+    <script type="text/javascript">
+        console.log('hello')
+        console.log('hello2')
+        for(var i = 0; i<100; i++) {
+            console.log(i)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@import './global';
+@import './test2.scss';
+div{
+    width: 100px;
+    height: 100px;
+    background-color: $bgColor;
+    p {
+        width: 100px;
+        height: 100px;
+        background-color: $divColor;
+    }
+}
+//单行注释
+/* 多行注释 */
+/*! 强力注释 */

@@ -1,0 +1,1 @@
+"use strict";var xhr=new XMLHttpRequest;xhr.open("GET","/dt"),xhr.send(),xhr.onload=function(){console.log(xhr.responseText)};

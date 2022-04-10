@@ -1,0 +1,1 @@
+"use strict";for(var i=0;i<10;i++)console.log(i);console.log("hello worl");var num=100,res=(console.log(num),new Promise(function(o,n){setTimeout(function(){console.log(123),o("hahaha")},1)}));res.then(function(o){console.log(o)});
